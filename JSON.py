@@ -19,3 +19,14 @@ with open('data.json','w') as json_file:
     json.dump(data,json_file,indent=4)
     
 print('Data has been written to data.json')
+
+#Read the data from the JSON file with statement, need to open then indicate to read file
+with open('data.json','r') as json_file:
+
+    #Control flow statement for loaded data object
+    loaded_data = json.load(json_file)
+
+#print function to display data on the terminal with loaded_data
+print("Sucessfully able to read data.json")
+print(loaded_data)
+
