@@ -12,10 +12,10 @@ data = {
 
 }
 
-#Writing a JSON file/ With statement with open function with two arguements, w = write
+#With statement for JSON file with open function with two arguements, w = write
 with open('data.json','w') as json_file:
     
-    #Three arguements: data, the open file, set the indentation for data structure
+    #Three arguements to start dump: data, the open file, set the indentation for data structure
     json.dump(data,json_file,indent=4)
     
 print('Data has been written to data.json')
