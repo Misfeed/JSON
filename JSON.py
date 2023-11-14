@@ -36,9 +36,9 @@ loaded_data['interest'].append('napping')
 
 #need a with statement to write to the json file
 with open('data.json','w') as json_file:
-    
+
     #pass loaded_data into the arguement to override it along with other two arguments (line 18)
     json.dump(loaded_data, json_file, indent=4)
 
-#To clarify to use that data has been added
+#To clarify to user that data has been added
 print('Modified data written to data.json')
