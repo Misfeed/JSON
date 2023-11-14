@@ -1,11 +1,12 @@
 {
     "name": "Daniella Echevestre",
-    "age": 26,
+    "age": 25,
     "city": "Tacoma",
     "interest": [
         "skating",
         "reading",
-        "videogames"
+        "videogames",
+        "napping"
     ],
     "is_student": true
 }

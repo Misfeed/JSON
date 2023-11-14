@@ -30,3 +30,15 @@ with open('data.json','r') as json_file:
 print("Sucessfully able to read data.json")
 print(loaded_data)
 
+#loaded data with key to altenate the value (Modifying the JSON data)
+loaded_data['age'] = 25
+loaded_data['interest'].append('napping')
+
+#need a with statement to write to the json file
+with open('data.json','w') as json_file:
+    
+    #pass loaded_data into the arguement to override it along with other two arguments (line 18)
+    json.dump(loaded_data, json_file, indent=4)
+
+#To clarify to use that data has been added
+print('Modified data written to data.json')
